@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Netflix';
+    src: url('./NetflixSans-Regular.otf') format('woff2');
+  }
+
+  :root {
+    --netflix-red-color: #e50914;
+  }
+
+body{
+   background-color: #141414;
+   color: rgb(225, 225, 225);
+   font-family: 'Netflix';
+   margin: 0;
+   padding: 0;
+}
+
+/* MENU DI NAVIGAZIONE */
+
+.header{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1%;
+}
+
+.logo > img{
+    width: 100%;
+    padding-left: 3%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    margin-left:3%;
+}
+
+.navbar > li{
+    list-style: none;
+    margin-right: 3%;
+}
+
+.navbar > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+li > a:hover{
+    color: gray;
+}
+
+#home{
+    font-weight: bold;
+}
+
+/* SEZIONI PRINCIPALI */
+
+main{
+    margin:1%;
+}
+
+.movie-box{
+    display: grid;
+    grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
+    gap: 1%;
+}
+
+.movie-item > img{
+width: 100%;
+height: auto;
+}
+
+section > .movie-box > a:hover{
+    background-color: var(--netflix-red-color);
+}
+
+
+
